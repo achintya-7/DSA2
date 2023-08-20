@@ -27,7 +27,7 @@ class Solution:
         ans = []
         
         for num in nums1:
-            ans.append(array[nums2.index(num)])
+            ans.append(array[nums2[num-1]])
 
         return ans
 
