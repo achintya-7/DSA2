@@ -43,7 +43,7 @@ class LRU(self, key, val):
             self.remove(self.cache[key])
 
         self.cache[key] = Node(key, val)
-        self.insert(self.cache[key])
+        self.add(self.cache[key])
 
         if len(self.cache) > self.capacity:
             lru = self.head.next
